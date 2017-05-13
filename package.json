@@ -1,0 +1,23 @@
+{
+  "name": "electron_test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "build": "tsc",
+    "prestart": "npm run build",
+    "start": "electron .",
+    "pack": "electron-packager . sample --out=dist --arch=x64 --platform=win32 --version=1.4.4 --overwrite --prune --ignore=dist --ignore=typings"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/electron": "^1.4.24",
+    "electron-packager": "^8.1.0",
+    "electron-prebuilt": "^1.4.4",
+    "typescript": "^2.0.3"
+  },
+  "dependencies": {
+    "command-exists": "^1.2.2"
+  }
+}
